@@ -1,9 +1,6 @@
-const siteRes = document.querySelector('.site')
-console.log(siteRes)
-
-siteRes.addEventListener('click', e => {
-    
-})
+fetch('http://localhost:3000/exercises')
+    .then(r => r.json())
+    .then(data => console.log(data))
 
 // hi everyone!!!!!
 /* 
