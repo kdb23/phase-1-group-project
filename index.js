@@ -1,6 +1,9 @@
 fetch('http://localhost:3000/exercises')
     .then(r => r.json())
-    .then(exercises => renderGains(exercises[0]) )
+    .then(exercises => {
+        console.log(exercises)
+        renderChest(exercises)
+    })
 
 // hi everyone!!!!!
 /* 
@@ -23,30 +26,48 @@ const muscle = document.getElementById("muscle")
 const chest = document.getElementById("chest")
 const glutes = document.getElementById("glutes")
 const gains = document.getElementById("gains")
-const beginnerHeader = document.getElementById("beginner")
-const intermediateHeader= document.getElementById("intermediate")
-const expertHeader = document.getElementById("expert")
-
+const beginnerDiv = document.getElementById("beginner")
+const intermediateDiv= document.getElementById("intermediate")
+const expertDiv = document.getElementById("expert")
 const exerciseName = document.getElementById("name")
 const equipment = document.getElementById("equipment")
 const instructions = document.getElementById("instructions")
 
 gains.addEventListener("click", e => {
-    const imgBeginner = document.createElement("img")
-    const imgIntermediate = document.createElement("img")
-    const imgExpert = document.createElement("img")
-    imgBeginner.src = exercises.image
-    beginnerHeader.append(imgBeginner)
-    imgIntermediate.src = exercises.image
-    intermediateHeader.append(imgIntermediate)
-    imgExpert.src = exercises.image
-    expertHeader.append(imgExpert)
+    
 // if then exercises === different difficulty   
     exerciseName.innerText = exercises.name
     equipment.innerText = exercises.equipment
     instructions.innerText = exercises.instructions
 })
 
-function renderGains(exercises) {
-    
+function renderChest(exercises) {
+    // const imgBeginner = document.createElement("img")
+    // const imgIntermediate = document.createElement("img")
+    // const imgExpert = document.createElement("img")
+    // imgBeginner.src = exercises.image
+    // beginnerDiv.append(imgBeginner)
+    // imgIntermediate.src = exercises.image
+    // intermediateDiv.append(imgIntermediate)
+    // imgExpert.src = exercises.image
+    // expertDiv.append(imgExpert)
+    const muscleObj = exercises.muscle
+    function ifChest() {
+        if (muscleObj == "chest") {
+            return true
+        }
+    }
+    const chestFilter = exercises.filter(ifChest)
+    console.log(chestFilter)
+}
+function renderGlutes(exercisesArray) {
+    // const imgBeginner = document.createElement("img")
+    // const imgIntermediate = document.createElement("img")
+    // const imgExpert = document.createElement("img")
+    // imgBeginner.src = exercises.image
+    // beginnerDiv.append(imgBeginner)
+    // imgIntermediate.src = exercises.image
+    // intermediateDiv.append(imgIntermediate)
+    // imgExpert.src = exercises.image
+    // expertDiv.append(imgExpert)
 }
