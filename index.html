@@ -7,21 +7,36 @@
 </head>
 <body>
     <div id="topside">
-    <h1>Hello World!</h1>
+    <h1>Gains"R"Us</h1>
     </div>
-    <div id = "table">
-        <ul id = "packing" class = "camping"> Packing List For Camping</ul>
-        <li class = "site">Site Reservation</li>
-        <li>Tent</li>
-        <li>Park Entrance Fee/Reservation</li>
-        <form id ="park entrance">
-            <label> "Park Entrace Time Slot Openings"
-                <input type="date" name ="date">
-                <input type="submit">
+    
+    <div id="choices">
+    <p>Choose Exercise Here!</p>
+    <form id="gains_form">
+        <select name="muscle" id="muscle">
+            <option value="chest">Chest</option>
+            <option value="glutes">Glutes</option>
+        </select>
+    </form>
+    </div>
 
-            </label>
-        </form>
+    <div id="difficulty_container">
+        <h2 id="beginner" class="level">Beginner</h2>
+        <h2 id="intermediate" class="level">Intermediate</h2>
+        <h2 id="expert" class="level">Expert</h2>
     </div>
+
+    <div id="information" class="info">
+        <p id="instructions"></p>
+    </div>
+
+    <div id="comment_section">
+    <form input="text" id="comments">
+        <label>Rate this exercise!</label>
+        <input type="text" name="Rate" />
+        <button id="button">Submit</button>
+    </form>
+    </div>  
     <script defer src="index.js"></script>
 </body>
 </html>
