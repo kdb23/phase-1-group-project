@@ -31,21 +31,22 @@ const exerciseName = document.getElementById("name")
 const equipment = document.getElementById("equipment")
 const instructions = document.getElementById("instructions")
 
+gains.addEventListener("click", e => {
+    const imgBeginner = document.createElement("img")
+    const imgIntermediate = document.createElement("img")
+    const imgExpert = document.createElement("img")
+    imgBeginner.src = exercises.image
+    beginnerHeader.append(imgBeginner)
+    imgIntermediate.src = exercises.image
+    intermediateHeader.append(imgIntermediate)
+    imgExpert.src = exercises.image
+    expertHeader.append(imgExpert)
+// if then exercises === different difficulty   
+    exerciseName.innerText = exercises.name
+    equipment.innerText = exercises.equipment
+    instructions.innerText = exercises.instructions
+})
 
 function renderGains(exercises) {
-    gains.addEventListener("click", e => {
-        const imgBeginner = document.createElement("img")
-        const imgIntermediate = document.createElement("img")
-        const imgExpert = document.createElement("img")
-        imgBeginner.src = exercises.image
-        beginnerHeader.append(imgBeginner)
-        imgIntermediate.src = exercises.image
-        intermediateHeader.append(imgIntermediate)
-        imgExpert.src = exercises.image
-        expertHeader.append(imgExpert)
-
-        exerciseName.innerText = exercises.name
-        equipment.innerText = exercises.equipment
-        instructions.innerText = exercises.instructions
-    })
+    
 }
