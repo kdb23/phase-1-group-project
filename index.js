@@ -33,19 +33,19 @@ const instructions = document.getElementById("instructions")
 
 
 function renderGains(exercises) {
-gains.addEventListener("click", e => {
-const imgBeginner = document.createElement("img")
-const imgIntermediate = document.createElement("img")
-const imgExpert = document.createElement("img")
-imgBeginner.src = exercises.image
-beginnerHeader.append(imgBeginner)
-imgIntermediate.src = exercises.image
-intermediateHeader.append(imgIntermediate)
-imgExpert.src = exercises.image
-expertHeader.append(imgExpert)
+    gains.addEventListener("click", e => {
+        const imgBeginner = document.createElement("img")
+        const imgIntermediate = document.createElement("img")
+        const imgExpert = document.createElement("img")
+        imgBeginner.src = exercises.image
+        beginnerHeader.append(imgBeginner)
+        imgIntermediate.src = exercises.image
+        intermediateHeader.append(imgIntermediate)
+        imgExpert.src = exercises.image
+        expertHeader.append(imgExpert)
 
-exerciseName.innerText = exercises.name
-equipment.innerText = exercises.equipment
-instructions.innerText = exercises.instructions
-})
+        exerciseName.innerText = exercises.name
+        equipment.innerText = exercises.equipment
+        instructions.innerText = exercises.instructions
+    })
 }
