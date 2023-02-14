@@ -13,13 +13,25 @@ const expert = document.getElementById('expert')
 function renderExercises(exerciseArray) {
     const image = document.createElement('img')
     image.src = exerciseArray.image
-    if (exerciseArray.difficulty == 'beginner') {
+    if (exerciseArray.difficulty == 'beginner' && exerciseArray.muscle == "chest") {
         beginner.append(image)
-    } else if ( exerciseArray.difficulty == 'intermediate') {
+        image.className = "chest"
+    } else if (exerciseArray.difficulty == 'beginner' && exerciseArray.muscle == "glutes") {
+        beginner.append(image)
+        image.className = "glutes"
+    } else if (exerciseArray.difficulty == 'intermediate' && exerciseArray.muscle == "chest") {
         intermediate.append(image)
-    } else if ( exerciseArray.difficulty == 'expert') {
+        image.className = "chest"
+    } else if (exerciseArray.difficulty == 'intermediate' && exerciseArray.muscle == "glutes") {
+        intermediate.append(image)
+        image.className = "glutes"
+    } else if ( exerciseArray.difficulty == 'expert' && exerciseArray.muscle == "chest") {
         expert.append(image)
-    }
+        image.className = "chest"
+    } else if ( exerciseArray.difficulty == 'expert' && exerciseArray.muscle == "glutes") {
+        expert.append(image)
+        image.className = "glutes"
+    }   
 }
 
 // hi everyone!!!!!
