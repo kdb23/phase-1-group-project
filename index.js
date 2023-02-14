@@ -71,7 +71,7 @@ Project Requirements
 
 
 gains.addEventListener("click", e => {
-    
+
 // if then exercises === different difficulty   
     exerciseName.innerText = exercises.name
     equipment.innerText = exercises.equipment
