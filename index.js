@@ -43,6 +43,8 @@ function renderExercises(exerciseArray) {
     
 
 }
+
+
 const submitEvent = gainsForm.addEventListener("submit", (e) => {
     e.preventDefault()
     const chest = document.getElementById("chest")
@@ -52,17 +54,23 @@ const submitEvent = gainsForm.addEventListener("submit", (e) => {
     const glutesClass = document.querySelectorAll(".glutes")
     const chestArray = Array.from(chestClass)
     const glutesArray = Array.from(glutesClass)
-    if (chest.value === "chest") {
-        console.log(chestArray)
-    } 
-    if (glutes.value === "glutes") {
-        console.log(glutesArray)
-    }
-
+    
+    
     
     
 })
 
+muscle.addEventListener("change", e => {
+    const chestClass = document.getElementsByClassName("chest")
+    const glutesClass = document.querySelectorAll(".glutes")
+    const chestArray = Array.from(chestClass)
+    const glutesArray = Array.from(glutesClass)
+    if (e.target.value === "chest") {
+        console.log(chestArray)
+    } else if (e.target.value === "glutes") {
+        console.log(glutesArray)
+    }
+})
 // hi everyone!!!!!
 /* 
 Project Requirements
