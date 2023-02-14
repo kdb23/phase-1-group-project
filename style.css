@@ -1,9 +1,28 @@
-#header {
-    padding: 60px;
+.header-image {
+    background-image: url('https://media.istockphoto.com/id/1147821366/vector/arm-with-dumbbell-vector-design-illustration-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=tw20RRJqG_h1ThCApHHyi6kmcPYSpNDiSyuxSRWqsFM=');
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 70px;
     text-align: center;
     font-size: 30px;
 }
 
+#choices {
+    text-align: center;
+}
+
+div.form {
+    display: block;
+    text-align: center;
+} 
+
+form {
+    display: inline-block;
+    
+    margin:0 auto;
+    text-align: center;
+}
 .level {
     float: left;
     width: 33%;
