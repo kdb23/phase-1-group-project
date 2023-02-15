@@ -46,17 +46,18 @@ form {
     display: flex;
     max-width: 33%;
 }
+#beginnerInfo {
+    position: relative;
 
-#beginner {
-    padding:200px;
 }
+
 
 #beginner img {
     width: 480px;
     height: 350px;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 1000px;
+    left: 200px;
 }
 #intermediate {
     padding: 200px;
