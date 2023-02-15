@@ -42,26 +42,47 @@ form {
 }
 
 #difficulty_container {  
+    text-align: center;
     display: flex;
     max-width: 33%;
 }
 
 #beginner {
-    padding:100px;
+    padding:200px;
+}
+
+#beginner img {
+    width: 480px;
+    height: 350px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
 #intermediate {
-    padding: 100px;
+    padding: 200px;
 }
 
 #intermediate img {
     /*min-width: 25%;*/
-    max-width: 300px;
+    width: 480px;
+    height: 350px;
+    position: absolute;
+    top: 0px;
+    left: 300px;
     /*max-height: 55%;*/
 } 
 
 #expert {
-    padding: 100px;
+    padding: 200px;
 }
 /* #expert img {
     max-width: 75%;
 } */
+
+#expert img {
+    width: 480px;
+    height: 350px;
+    position: absolute;
+    top: 0px;
+    left: 600px;
+}
