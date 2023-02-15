@@ -1,3 +1,5 @@
+
+
 .header-image {
     background-image: url('https://media.istockphoto.com/id/1147821366/vector/arm-with-dumbbell-vector-design-illustration-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=tw20RRJqG_h1ThCApHHyi6kmcPYSpNDiSyuxSRWqsFM=');
     background-position: center;
@@ -24,66 +26,54 @@ form {
     margin:0 auto;
     text-align: center;
 }
-/* .level {
-    float: left;
-    width: 33%;
 
-} */
-
-.info {
-    float: left;
-    width: 50%;
-}
-
-.play {
-    float: left;
-    max-width: 50%;
-    padding: 30px;
-}
 
 #difficulty_container {  
     text-align: center;
     display: flex;
-    max-width: 33%;
+    /* max-width: 33%; */
 }
 #beginnerInfo {
     position: relative;
 
 }
 
+#beginner {
+    padding: 50px;
+}
 
 #beginner img {
-    width: 480px;
-    height: 350px;
-    position: absolute;
-    top: 1000px;
-    left: 200px;
+    width: 350px;
+    height: 270px;
+    /* position: absolute; */
+   /*  top: 1000px;
+    left: 200px; */
 }
 #intermediate {
-    padding: 200px;
+    padding: 50px;
 }
 
 #intermediate img {
     /*min-width: 25%;*/
-    width: 480px;
-    height: 350px;
-    position: absolute;
+    width: 350x;
+    height: 270px;
+   /*  position: absolute;
     top: 0px;
-    left: 300px;
+    left: 300px; */
     /*max-height: 55%;*/
 } 
 
 #expert {
-    padding: 200px;
+    padding: 50px;
 }
 /* #expert img {
     max-width: 75%;
 } */
 
 #expert img {
-    width: 480px;
-    height: 350px;
-    position: absolute;
+    width: 350px;
+    height: 270px;
+   /*  position: absolute;
     top: 0px;
-    left: 600px;
+    left: 600px; */
 }
