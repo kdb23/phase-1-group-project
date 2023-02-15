@@ -44,6 +44,7 @@ function renderExercises(exerciseArray) {
     const nameLi = document.createElement('li')
     const infoLi = document.createElement('li')
     image.src = exerciseArray.image
+    image.alt = exerciseArray.name
     if (exerciseArray.difficulty == 'beginner' && exerciseArray.muscle == "chest") {
         image.className = "chest"
         image.style.display = "none"
