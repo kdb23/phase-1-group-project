@@ -41,16 +41,27 @@ form {
     padding: 30px;
 }
 
-#difficulty_container {
-    /* max-width: 50%;  */
+#difficulty_container {  
     display: flex;
+    max-width: 33%;
+}
+
+#beginner {
+    padding:100px;
+}
+#intermediate {
+    padding: 100px;
 }
 
 #intermediate img {
-    max-width: 75%;
-    max-height: 55%;
-}
+    /*min-width: 25%;*/
+    max-width: 300px;
+    /*max-height: 55%;*/
+} 
 
+#expert {
+    padding: 100px;
+}
 /* #expert img {
     max-width: 75%;
 } */
