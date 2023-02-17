@@ -101,7 +101,7 @@ function renderExercises(exerciseArray) {
         if (e.target.src === "https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/02/Smalb%C3%A4nk.gif?resize=600%2C600&ssl=1") {
             blockDisplay();
         } 
-        if (e.target.src === "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-3gVua4VSOcUTYmUbKO-2aY4esfaDnyPT9A&usqp=CAU") {
+        if (e.target.src === "https://hips.hearstapps.com/hmg-prod/images/workouts/2017/04/inclinedumbbellbenchpress-1492108229.gif") {
             blockDisplay();
         } 
         if (e.target.src === "https://media.self.com/photos/57aa008dd077f2273cf20476/master/w_1600%2Cc_limit/STEP_UP_KNEE_LIFT.gif") {
@@ -121,7 +121,7 @@ function renderExercises(exerciseArray) {
         if (e.target.src === "https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/02/Smalb%C3%A4nk.gif?resize=600%2C600&ssl=1") {
             noneDisplay();
         } 
-        if (e.target.src === "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-3gVua4VSOcUTYmUbKO-2aY4esfaDnyPT9A&usqp=CAU") {
+        if (e.target.src === "https://hips.hearstapps.com/hmg-prod/images/workouts/2017/04/inclinedumbbellbenchpress-1492108229.gif") {
             noneDisplay();
         } 
         if (e.target.src === "https://media.self.com/photos/57aa008dd077f2273cf20476/master/w_1600%2Cc_limit/STEP_UP_KNEE_LIFT.gif") {
